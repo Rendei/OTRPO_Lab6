@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="src/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <script type="module" src="/src/main.ts"></script>
+    <div id="info">
+      <p>Информация об узле будет отображаться здесь при нажатии.</p>
+    </div>
+
+    <div id="menu">
+      <label for="layoutSwitch">Расположение узлов:</label>
+      <input type="range" id="layoutSwitch" min="0" max="1" step="1" value="0" 
+             onchange="updateLayout(this.value)">
+      <span id="layoutLabel">Случайное</span>
+    </div>
+    
+  </body>
+</html>
