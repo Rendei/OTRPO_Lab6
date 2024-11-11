@@ -28,7 +28,7 @@ function initScene() {
   document.body.appendChild(renderer.domElement);
 
   // Добавляем свет
-  const light = new THREE.AmbientLight(0x404040);
+  const light = new THREE.AmbientLight(0xf0f0f0);
   scene.add(light);
   const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
   scene.add(directionalLight);
